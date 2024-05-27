@@ -1,0 +1,31 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fce8e6; /* cor de fundo */
+    margin: 0;
+}
+h1, p {
+    color: #2b61f5; /* cor do texto */
+    text-shadow: 2px 2px 4px rgba(247, 244, 244, 0.5); /* sombra do texto */
+}
+#confetti-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.confetti {
+    position: absolute;
+    background: #ff00a9; /* cor dos confetes */
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    animation: confetti-fall linear 4s infinite;
+}
+@keyframes confetti-fall {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(100vh); }
+}
